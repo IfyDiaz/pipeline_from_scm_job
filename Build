@@ -6,6 +6,25 @@ pipeline {
             steps {
                 echo 'Building a webstore'
             }
+            
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the webstore'
+            }
+            
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing deployments'
+            }
+            
+        }
+        stage('Release') {
+            steps {
+                echo 'Releasing'
+            }
+            
         }
     }
 }
